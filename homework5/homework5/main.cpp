@@ -123,6 +123,11 @@ string mergeSort(string fileName)
     
     sorting_vector = mSort(sorting_vector); //implement mSort with vector
     
+    for(int i = 0; i<sorting_vector.size(); i++)
+    {
+        cout<<sorting_vector.at(i)<<" ";
+    }
+    
     ostringstream comparisonsConvert;        //***********************************************
     comparisonsConvert << comparisons;
     comparisonsStr=comparisonsConvert.str();
@@ -320,26 +325,7 @@ string bubbleSort(string fileName) //master function for bubble sorting algortit
 }
 
 int main() {
-    cout<<bubbleSort("fewUnique.txt")<<endl;
-    cout<<bubbleSort("nearlySorted.txt")<<endl;
-    cout<<bubbleSort("random.txt")<<endl;
-    cout<<bubbleSort("reversed.txt")<<endl;
-    cout<<endl;
-    cout<<insertionSort("fewUnique.txt")<<endl;
-    cout<<insertionSort("nearlySorted.txt")<<endl;
-    cout<<insertionSort("random.txt")<<endl;
-    cout<<insertionSort("reversed.txt")<<endl;
-    cout<<endl;
-    cout<<quickSort("fewUnique.txt")<<endl;
-    cout<<quickSort("nearlySorted.txt")<<endl;
-    cout<<quickSort("random.txt")<<endl;
-    cout<<quickSort("reversed.txt")<<endl;
-    cout<<endl;
-    cout<<shellSort("fewUnique.txt")<<endl;
-    cout<<shellSort("nearlySorted.txt")<<endl;
-    cout<<shellSort("random.txt")<<endl;
-    cout<<shellSort("reversed.txt")<<endl;
-    cout<<endl;
+
     cout<<mergeSort("fewUnique.txt")<<endl;
     cout<<mergeSort("nearlySorted.txt")<<endl;
     cout<<mergeSort("random.txt")<<endl;
